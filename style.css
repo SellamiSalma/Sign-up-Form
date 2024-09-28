@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Norse';
+  src: url('./assets/Norse-Bold.otf') format('opentype');
+  font-weight: bold; /* Specify font weight */
+  font-style: normal; /* Specify font style */
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  display: flex;
+  height: 100vh;
+}
+.card-container{
+  background-image: url('./images/background-img.avif');
+  background-size: cover;
+  flex: 1;
+  position: relative;
+}
+.right-side-container{
+  flex: 2;
+}
+.logo img{
+  height: 100px;
+}
+.logo h1{
+  color: white;
+  font-size: 3rem;
+  font-family: 'Norse';
+}
+.logo{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  background-color: rgba(36, 36, 36, 0.5);
+  position: absolute;
+  top: 15vh;
+}
+p.image-author{
+  position: absolute;
+  bottom: 3vh;
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+}
+.right-side-container{
+  display: flex;
+  flex-direction: column;
+}
+.page-description{
+  flex: 1;
+  background-color: rgba(201, 198, 198, 0.2);
+}
+form{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+.text{
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-top: 70px;
+  padding-left: 50px;
+  padding-right: 120px;
+  padding-bottom: 10px;  
+}
+.user-data-container, .submission{
+  flex:1;
+}
+.user-data-container{
+  padding-left: 50px;
+  box-shadow: 0px 5px 10px rgb(81, 81, 81, .2);
+  padding-bottom: 15px;
+}
+.submission{
+  background-color: rgba(201, 198, 198, 0.2);
+}
+.row{
+  display: flex;
+  gap: 3rem;
+  font-size: 10px;
+}
+.row label{
+    color: #898a8a;
+}
+
+.user-data-container h2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.input{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 0.2rem;
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.submission{
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+.submission button{
+  background-color: #596D48;
+  border:none;
+  padding: 10px 0px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 200px;
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+  color: #596D48;
+}
+input {
+  padding: 4px;
+  border: 1px solid gray; /* Default border */
+  border-radius: 4px;
+  outline: none; /* Remove default outline */
+  transition: border-color 0.3s; /* Smooth transition */
+}
+input:focus {
+  border: 1px solid blue; /* Blue border on focus */
+  box-shadow: 2px 3px 10px grey;
+}
+input[type='password']:focus:invalid{
+  border: 1px solid red;
+}
